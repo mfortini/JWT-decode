@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <title>JWT Decoder Italia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/bootstrap-italia.min.css">
+  <style>
+    textarea { font-family: monospace; resize: vertical; }
+    pre { background: #f8f9fa; padding: 1rem; border-radius: .5rem; }
+  </style>
+</head>
+<body>
+
+  <header class="it-header-slim-wrapper">
+    <div class="it-header-slim">
+      <div class="container">
+        <a class="navbar-brand" href="#">jwt-italia</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <h1 class="mb-4">JWT Decoder Italia</h1>
+
+    <div class="row g-4">
+      <div class="col-12 col-lg-6">
+        <label for="jwt-input" class="form-label fw-bold">Incolla qui il tuo JWT</label>
+        <textarea id="jwt-input" class="form-control" rows="8" placeholder="eyJhbGciOi..."></textarea>
+
+        <div id="error-box" class="alert alert-danger mt-3 d-none" role="alert"></div>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <h2 class="h5">Header</h2>
+        <pre id="header-json"></pre>
+
+        <h2 class="h5 mt-4">Payload</h2>
+        <pre id="payload-json"></pre>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/bootstrap-italia.bundle.min.js"></script>
+  <script src="bundle.js"></script>
+</body>
+</html>
